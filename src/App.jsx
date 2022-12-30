@@ -9,6 +9,8 @@ import Contact from './components/contact/Contact'
 
 const App = () => {
 
+
+
   return (
   <>  
     
@@ -24,6 +26,8 @@ const App = () => {
     </>
   )
 }
+
+
 
 
 export default App

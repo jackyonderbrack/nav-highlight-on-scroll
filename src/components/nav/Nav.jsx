@@ -13,9 +13,33 @@ import { useState } from 'react'
 
 export default function Nav() {
 
-  const [activeNav, setActiveNav] = useState('#home')
-    //
 
+
+  // On Click change state:
+  const [activeNav, setActiveNav] = useState('home')
+
+  // Nav On Scroll change state:
+  const sections = document.querySelectorAll('section');
+  const navLi = document.querySelectorAll('nav a');    
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach( section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+              
+    if(window.pageYOffset >= (sectionTop - sectionHeight/3)) {
+      current = section.getAttribute('id')
+      }
+    })
+      console.log(current)
+      navLi.forEach ( a => {
+        a.classList.remove('active');
+        if(a.classList.contains(current)){
+          a.classList.add('active');
+        }
+    })
+    
+  })
 
 
 
@@ -24,28 +48,23 @@ export default function Nav() {
 
     <nav>
         <a  href="#home" 
-          onClick={() => setActiveNav('#home')} 
-          className={activeNav === '#home' ? 'active' : ' '}><IoHomeSharp /><p>Home</p></a>
+          className='home'><IoHomeSharp /><p>Home</p></a>
 
         <a  href="#portfolio" 
-          onClick={() => setActiveNav('#portfolio')} 
-          className={activeNav === '#portfolio' ? 'active' : ' '}> <ImImages /><p>Portfolio</p></a>
+          className='portfolio'> <ImImages /><p>Portfolio</p></a>
 
         <a  href="#about" 
-          onClick={() => setActiveNav('#about')} 
-          className={activeNav === '#about' ? 'active' : ' '}> <BiUserPin /><p>About</p></a>
+          className='about'> <BiUserPin /><p>About</p></a>
 
         <a  href="#experience" 
-          onClick = {() => setActiveNav('#experience')} 
-          className={activeNav === '#experience' ? 'active' : ' '}> <SiBookstack /><p>Experience</p></a>
+          className='experience'> <SiBookstack /><p>Experience</p></a>
 
         <a  href="#services" 
-          onClick={() => setActiveNav('#services')} 
-          className={activeNav === '#services' ? 'active' : ' '}> <FaWifi /><p>Services</p></a>
+            className='services'><FaWifi /><p>Services</p></a>
 
-        <a  href="#contact" 
-          onClick={() => setActiveNav('#contact')} 
-          className={activeNav === '#contact' ? 'active' : ' '}><SiGooglemessages /><p>Contact</p></a>
+        <a  href="#contact"  
+            className='contact'><SiGooglemessages /><p>Contact</p></a>
+      
       
     </nav>
 
