@@ -5,7 +5,6 @@ import {SiBookstack} from 'react-icons/si'
 import {FaWifi} from 'react-icons/fa'
 import {SiGooglemessages} from 'react-icons/si'
 import {ImImages} from 'react-icons/im'
-import { useState } from 'react'
 
 
 
@@ -16,7 +15,7 @@ export default function Nav() {
 
 
   // On Click change state:
-  const [activeNav, setActiveNav] = useState('home')
+  
 
   // Nav On Scroll change state:
   const sections = document.querySelectorAll('section');
@@ -38,30 +37,22 @@ export default function Nav() {
           a.classList.add('active');
         }
     })
-    
   })
-
-
 
 
   return (
 
     <nav>
         <a  href="#home" 
-          className='home'><IoHomeSharp /><p>Home</p></a>
-
+            className='home'><IoHomeSharp /><p>Home</p></a>
         <a  href="#portfolio" 
-          className='portfolio'> <ImImages /><p>Portfolio</p></a>
-
+            className='portfolio'> <ImImages /><p>Portfolio</p></a>
         <a  href="#about" 
-          className='about'> <BiUserPin /><p>About</p></a>
-
+            className='about'> <BiUserPin /><p>About</p></a>
         <a  href="#experience" 
-          className='experience'> <SiBookstack /><p>Experience</p></a>
-
+            className='experience'> <SiBookstack /><p>Experience</p></a>
         <a  href="#services" 
             className='services'><FaWifi /><p>Services</p></a>
-
         <a  href="#contact"  
             className='contact'><SiGooglemessages /><p>Contact</p></a>
       
