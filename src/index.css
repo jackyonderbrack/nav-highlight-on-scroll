@@ -21,7 +21,7 @@
     --container-width-lg: 76%;
     --container-width-md: 81%;
     --container-width-sm: 90%;
-    --transition: all 400ms ease;
+    --transition: all 618ms ease;
 }
 
 html {
@@ -48,13 +48,29 @@ section {
     justify-content: center;
 }
 
+.button-light {
+    
+}
+
+.button-dark {
+
+}
+
 /* Animation */
 
-.hidden {
+.hidden-1 {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
     transition: var(--transition);
+}
+
+.hidden-2 {
+    opacity: 0;
+    filter: blur(1px);
+    transform: translateX(100%);
+    transition: var(--transition);
+    transition-delay: 618ms;
 }
 
 
