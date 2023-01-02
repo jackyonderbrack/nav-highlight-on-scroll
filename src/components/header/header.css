@@ -1,0 +1,13 @@
+#home {
+    display: flex;
+    flex-direction: row;
+}
+
+#home > img {
+    border-radius: 6rem;
+    width: 20rem;
+}
+
+#home > p {
+    color: var(--color-light);
+}

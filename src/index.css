@@ -47,3 +47,21 @@ section {
     display: flex;
     justify-content: center;
 }
+
+/* Animation */
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: var(--transition);
+}
+
+
+/* ---------------- */
+
+.show-animation {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
