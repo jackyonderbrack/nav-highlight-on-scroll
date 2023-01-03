@@ -27,7 +27,6 @@
     .container {
         grid-template-columns: 1fr !important ;
         gap: 3rem;
-        padding
     }
 
     .column {

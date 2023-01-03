@@ -7,15 +7,19 @@ const Header = () => {
     <section id='home'>
       <div className="container">
 
-        <div className='column'>
+        <div className='column'> 
 
-            <div className="row">
+            <div className="column">
               <h2>Michał Łuczak</h2>
+              <p className='hidden-1'>I am a programer & graph designer</p>
             </div>
             
             <div className='column'>  
-              <p className='hidden-1'>I am a programer & graph designer</p>
-              <p className='hidden-2'>HTML, CSS, JS, React, Node. </p>
+              
+              <p className='hidden-2'><b>HTML</b></p>
+              <p className='hidden-2'><b>CSS • SCSS • Bootstrap</b></p>            
+              <p className='hidden-1'><b> JavaScript • React • Node</b></p>
+              
             </div>
 
             <div className="row call-to-action">
@@ -23,9 +27,10 @@ const Header = () => {
               <button className='button-2'><a href="#contact">Contact</a></button>
             </div>
         </div>
-            <div className="column">
-                <img className='hidden-2' src={HeaderImg} alt="My_picture" />
-            </div>
+
+        <div className="column">
+            <img className='hidden-3' src={HeaderImg} alt="My_picture" />
+        </div>
         
         
       </div>

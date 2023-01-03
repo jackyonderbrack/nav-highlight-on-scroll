@@ -23,8 +23,11 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements1 = document.querySelectorAll('.hidden-1')
 const hiddenElements2 = document.querySelectorAll('.hidden-2')
+const hiddenElements3 = document.querySelectorAll('.hidden-3')
 hiddenElements1.forEach((el) => observer.observe(el));
 hiddenElements2.forEach((el) => observer.observe(el));
+hiddenElements3.forEach((el) => observer.observe(el));
+
 
 
 // Nav On Scroll change state:
