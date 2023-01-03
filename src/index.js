@@ -21,12 +21,10 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-const hiddenElements = document.querySelectorAll('.hidden')
-
-
-hiddenElements.forEach((el) => observer.observe(el));
-
-
+const hiddenElements1 = document.querySelectorAll('.hidden-1')
+const hiddenElements2 = document.querySelectorAll('.hidden-2')
+hiddenElements1.forEach((el) => observer.observe(el));
+hiddenElements2.forEach((el) => observer.observe(el));
 
 
 // Nav On Scroll change state:

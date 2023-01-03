@@ -1,13 +1,36 @@
 #home {
-    display: flex;
-    flex-direction: row;
+    
 }
 
-#home > img {
-    border-radius: 6rem;
+#home .header {
+    
+}
+#home img {
+    border-radius: 10rem;
     width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    object-position: 0rem -10rem;
+    
 }
 
-#home > p {
+#home p {
     color: var(--color-light);
+}
+
+.call-to-action {
+    
+}
+
+/* MEDIA QUERIES (MEDIUM DEVICES) */
+@media screen and (max-width: 1024px){
+
+}
+
+/* MEDIA QUERIES (SMALL DEVICES) */
+@media screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
