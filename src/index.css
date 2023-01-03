@@ -57,11 +57,18 @@ body {
 }
 
 section {
-    height: 100vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/* MEDIA QUERIES (SMALL DEVICES) */
+@media screen and (max-width: 1024px) {
+    section {
+        height: 100vh;
+    }
 }
 
 .button-1 {
@@ -106,7 +113,7 @@ section {
 }
 
 .row {
-    width: 100%;
+    gap: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -119,26 +126,28 @@ section {
 .hidden-1 {
     opacity: 0;
     filter: blur(5px);
-    transform: translateX(-100%);
-    transition: var(--transition);
+    transform: translateX(-10vw);
+    transition: all 400ms ease;
 }
 
 .hidden-2 {
     opacity: 0;
     filter: blur(10px);
-    transform: translateX(100%);
-    transition: var(--transition);
+    transform: translateX(10vw);
+    transition: all 400ms ease;
 }
 
 .hidden-3 {
     opacity: 0;
     filter: blur(10px);
-    transition: var(--transition);   
+    transition: all 600ms ease;  
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.9);
 }
 
 .hidden-3:hover {
-    transform: rotate(15deg);
-    filter: drop-shadow(0px 0px 13px rgba(0, 0, 0, 0.9));
+    transform: rotate(2deg);
+    box-shadow: 0px 0px 20px rgba(144, 173, 159, 0.3);
+    
 }
 
 .hidden-2:nth-child(0) {

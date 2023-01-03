@@ -15,7 +15,7 @@
 }
 
 #home p {
-    color: var(--color-light);
+    
 }
 
 .call-to-action {
@@ -27,6 +27,7 @@
     .container {
         grid-template-columns: 1fr !important ;
         gap: 3rem;
+        padding-top: 1rem;
     }
 
     .column {
@@ -36,7 +37,20 @@
     .call-to-action {
         display: flex;
         flex-direction: column !important;
-        gap: 1rem;
+        min-width: 20rem !important;
+        gap: 0.5rem;
+    }
+
+    .call-to-action > button {
+        
+    }
+
+    h2 {
+        margin-bottom: -1rem;
+    }
+
+    .column:nth-child(1) {
+        margin-bottom: 1rem;
     }
 
 }

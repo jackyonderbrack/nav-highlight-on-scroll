@@ -11,14 +11,16 @@ const Header = () => {
 
             <div className="column">
               <h2>Michał Łuczak</h2>
-              <p className='hidden-1'>I am a programer & graph designer</p>
+              <h5 className='hidden-1'>I am a programer & graph designer</h5>
             </div>
             
             <div className='column'>  
               
-              <p className='hidden-2'><b>HTML</b></p>
-              <p className='hidden-2'><b>CSS • SCSS • Bootstrap</b></p>            
-              <p className='hidden-1'><b> JavaScript • React • Node</b></p>
+              <p className='hidden-2'>•HTML</p>
+              <p className='hidden-2'>• CSS • SCSS</p>       
+              <p className='hidden-2'>• Bootstrap</p>         
+              <p className='hidden-1'>• JavaScript • React</p>
+              <p className='hidden-2'>• Node</p>    
               
             </div>
 
