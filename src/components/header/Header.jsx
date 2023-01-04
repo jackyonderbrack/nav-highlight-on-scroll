@@ -17,7 +17,7 @@ const Header = () => {
             <div className='column'>  
               
               <p className='hidden-2'>•HTML</p>
-              <p className='hidden-2'>• CSS • SCSS</p>       
+              <p className='hidden-1'>• CSS • SCSS</p>       
               <p className='hidden-2'>• Bootstrap</p>         
               <p className='hidden-1'>• JavaScript • React</p>
               <p className='hidden-2'>• Node</p>    
